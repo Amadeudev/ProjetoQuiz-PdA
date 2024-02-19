@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans+Mono&family=Roboto+Mono:ital@0;1&display=swap');
+
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Noto Sans Mono', monospace;
+font-family: 'Roboto Mono', monospace;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    font-family: 'Kanit', sans-serif;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    width: auto;
+}
+
+.container_header {
+    width: 800px;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border:brown 3px solid;
+    border-radius: 17px;
+    padding: 0.7rem 0;
+    background-color: brown;
+}
+
+.container_header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.container_header nav ul li {
+    margin: 0 0.7rem;
+}
+
+
+/* section do quiz a baixo... */
+.container_quite {
+    display: flex;
+    flex-direction: row;
+}
+
+.container_quite section {
+    border: brown 3px solid;
+    border-radius: 23px;
+    margin: 0 2.3rem;
+    height: 70vh;
+}
+
+.container_quite section:first-child {
+    padding: 2rem 3rem;
+    width: 40%;
+}
+
+.container_quite section:last-child {
+    font-family: 'Kanit', sans-serif;
+    color: aliceblue;
+    flex-grow: 1;
+}
+
+.container_team {
+    color: azure;
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+/* Ids e Class abaixo dicionados via Js ... */
+.container_quiz {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button {
+    flex-direction: row;
+}
+
+.flex-button #start {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    width: 250px;
+    background: rgb(255, 243, 243);
+    padding: 0.6rem 0.9rem;
+    margin-top: 1rem;
+    border-bottom-color: rgb(255, 136, 0);
+    background: rgb(255, 136, 0);
+    color: aliceblue;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+}
+
+#start:hover::after {
+    content: ' Quiz';
+}
+
+#start:hover {
+    color: aliceblue;
+    box-shadow: 0px 0px 4px aliceblue;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: rgb(255, 136, 0);
+    color: aliceblue;
+    box-shadow: 0px 0px 4px rgb(255, 136, 0);
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quiz h2 {
+    margin: 2rem 0;
+}
+
+.alternatives {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    width: 350px;
+    margin: 0.4rem 0;
+    background: rgb(255, 243, 243);
+    padding: 0.6rem 0.9rem;
+    border: rgb(255, 136, 0) solid 3px;
+    border-radius: 10px;
+}
+
+.alternatives:focus {
+    background-color: rgb(255, 136, 0);
+    color: white;
+    transition: 0.3s;
+}
+/*
+.alternatives:not(:focus) { ... }
+*/
